@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 01 — Lena</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #FFFAF4; --g1: #7E3D76; --g2: #C27AB8; --g3: #E8A0D8;
+      --text: #1a1a2e; --muted: #999; --border: #e8e2dc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Noto Sans TC', sans-serif; -webkit-font-smoothing: antialiased; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.4rem 4rem;
+      background: rgba(255,250,244,0.88); backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif; font-size: 1.5rem;
+      background: linear-gradient(110deg, var(--g1), var(--g2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      text-decoration: none;
+    }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      text-decoration: none; color: var(--muted); font-size: 0.875rem;
+      border: 1.5px solid var(--border); border-radius: 100px;
+      padding: 0.5rem 1.2rem; transition: border-color 0.2s;
+    }
+    .back-btn:hover { border-color: #aaa; color: var(--text); }
+    main {
+      max-width: 860px; margin: 0 auto;
+      padding: 9rem 2rem 6rem;
+    }
+    .project-tag {
+      display: inline-block;
+      font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;
+      background: linear-gradient(90deg, var(--g1), var(--g2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 400; line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .cover {
+      width: 100%; border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--border); margin: 2.5rem 0;
+    }
+    .cover img { width: 100%; display: block; }
+    .placeholder-section {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 16px; padding: 3rem;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 1rem; margin-bottom: 2rem;
+      color: var(--muted);
+    }
+    .placeholder-section .icon { font-size: 2rem; opacity: 0.3; }
+    .placeholder-section p { font-size: 0.9rem; line-height: 1.6; max-width: 380px; }
+    .section-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav { padding: 1rem 1.5rem; }
+      main { padding: 7rem 1.5rem 4rem; }
+      .section-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="vibecoding專案/vibecoding測試.html">Lena.</a>
+  <a class="back-btn" href="vibecoding專案/vibecoding測試.html">← 返回作品集</a>
+</nav>
+<main>
+  <div class="project-tag">Case Study 01</div>
+  <h1>專案名稱待填入</h1>
+
+  <div class="cover">
+    <div style="height:360px;background:linear-gradient(135deg,#f2eaef,#e8d5f0);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.8rem;letter-spacing:0.1em;">封面圖</div>
+  </div>
+
+  <div class="section-grid">
+    <div class="placeholder-section">
+      <div class="icon">🔍</div>
+      <strong>研究背景</strong>
+      <p>專案背景與使用者研究說明，稍後補充。</p>
+    </div>
+    <div class="placeholder-section">
+      <div class="icon">🎯</div>
+      <strong>設計目標</strong>
+      <p>核心設計目標與解決的問題，稍後補充。</p>
+    </div>
+    <div class="placeholder-section">
+      <div class="icon">✏️</div>
+      <strong>設計過程</strong>
+      <p>Wireframe、Prototype 到最終設計，稍後補充。</p>
+    </div>
+    <div class="placeholder-section">
+      <div class="icon">💡</div>
+      <strong>成果與反思</strong>
+      <p>設計成果、數據與學到的事，稍後補充。</p>
+    </div>
+  </div>
+
+  <div class="placeholder-section" style="margin-top:1rem;">
+    <div class="icon">🖼</div>
+    <strong>設計畫面展示</strong>
+    <p>作品截圖、互動展示，稍後補充。</p>
+  </div>
+</main>
+</body>
+</html>
